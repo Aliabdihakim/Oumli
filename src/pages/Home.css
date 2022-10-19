@@ -1,0 +1,8 @@
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FFF4EC;
+
+}
