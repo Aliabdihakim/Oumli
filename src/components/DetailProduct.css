@@ -1,0 +1,38 @@
+.detail-div{
+    display: flex;
+    padding: 50px;
+    background-color: #FFF4EC;
+    color:#635151;
+}
+
+.detail-title{
+    font-size: 3rem;
+}
+
+.detail-desc{
+    font-size: 1.3rem;
+    line-height: 2;
+    padding-bottom: 20px;
+}
+
+.detail-info-div{
+    padding: 10px 50px;
+}
+
+.show-other{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #FFF4EC;
+    padding-bottom: 200px;
+}
+
+.other-title{
+    font-size: 3rem;
+    text-align: center;
+    color:#635151;
+    margin: 0;
+    background-color: #FFF4EC;
+    padding: 200px 0 100px 0;
+}

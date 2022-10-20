@@ -1,0 +1,16 @@
+.product-div{
+    text-align: center;
+    padding: 40px;
+}
+
+.product-button{
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B48261;
+    padding: 15px 40px;
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    color: #B48261;
+}
