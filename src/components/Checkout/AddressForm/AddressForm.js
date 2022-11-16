@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import "./AddressForm.css"
 
 const AddressForm = ({next}) => {
 
@@ -7,9 +8,10 @@ const AddressForm = ({next}) => {
         firstName: "",
         lastName: "",
         email: "",
+        phone:"",
+        address:"",
         state: "",
         zip: "",
-        phone:"",
     })
 
     const handleChange = (e) => {
@@ -20,15 +22,18 @@ const AddressForm = ({next}) => {
 
   return (
     <div>
-      <form onSubmit={(e)=>{e.preventDefault() ;next(address)}}>
-        <input type="text" name="firstName" value={address.firstName} onChange={handleChange}/>
-        <input type="text" name="lastName" value={address.lastName} onChange={handleChange}/>
-        <input type="email" name="email" value={address.email} onChange={handleChange}/>
-        <input type="text" name="phone" value={address.phone} onChange={handleChange}/>
-        <input type="text" name="state" value={address.state} onChange={handleChange}/>
-        <input type="text" name="zip" value={address.zip} onChange={handleChange}/>
-        <Link to="/varukorg">Tillbaka till varukorg</Link>
-        <button>Fortsätt</button>
+      <form className='address-form' onSubmit={(e)=>{e.preventDefault() ;next(address)}}>
+        <input className='address-input' type="text" name="firstName" placeholder='Förnamn' value={address.firstName} onChange={handleChange}/>
+        <input className='address-input' type="text" name="lastName" placeholder='Efternamn' value={address.lastName} onChange={handleChange}/>
+        <input className='address-input' type="text" name="email" placeholder='Email' value={address.email} onChange={handleChange}/>
+        <input className='address-input' type="text" name="phone" placeholder='Telefon' value={address.phone} onChange={handleChange}/>
+        <input className='address-input' type="text" name="address" placeholder='Adress' value={address.address} onChange={handleChange}/>
+        <input className='address-input' type="text" name="state" placeholder='Ort' value={address.state} onChange={handleChange}/>
+        <input className='address-input' type="text" name="zip" placeholder='Postkod' value={address.zip} onChange={handleChange}/>
+        <div className='address-buttons-div'>
+          <button className='address-button' style={{color:"#B48261", backgroundColor:"white", borderColor:"#B48261"}}><Link to="/varukorg" style={{textDecoration:"none", color:"#635151", backgroundColor:"white"}}>Tillbaka till varukorg</Link></button>
+          <button className='address-button' style={{backgroundColor:"#B48261", color:"white", borderColor:"#B48261"}}>Fortsätt</button>
+        </div>
       </form>
     </div>
   )

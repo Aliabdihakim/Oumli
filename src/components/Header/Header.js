@@ -1,29 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaShoppingCart } from "react-icons/fa";
 import { Badge } from '@mui/material';
 import "./Header.css"
 
 function Header({totalItems}) {
+
+    const navItems = ({ isActive }) => ({
+        color: isActive ? '#A86C64' : '#635151',
+      })
+
   return (
     <header className='header-head'>
         <ul>
             <li>
-                <Link className='header-logo' to="/">Oumli</Link>
+                <NavLink className='header-logo' to="/">Oumli</NavLink>
             </li>
         </ul>
         <ul className='header-all-links '>
             <li >
-                <Link className='menu-link' to="/matlador">Matlådor</Link>
+                <NavLink className='menu-link' to="/matlador" style={navItems}>Matlådor</NavLink>
             </li>
             <li>
-                <Link className='menu-link' to="/presentkort">Presentkort</Link>
+                <NavLink className='menu-link' to="/presentkort" style={navItems}>Presentkort</NavLink>
             </li>
             <li>
-                <Link className='menu-link' to="/omoss">Om oss</Link>
-            </li>
-            <li>
-                <Link className='menu-link' to="/faq">FAQ</Link>
+                <NavLink className='menu-link' to="/omoss" style={navItems}>Om oss</NavLink>
             </li>
         </ul>
         <ul>

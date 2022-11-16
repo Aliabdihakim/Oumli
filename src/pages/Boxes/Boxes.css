@@ -1,0 +1,17 @@
+.boxes-div{
+    text-align: center;
+    margin: 0 200px;
+}
+
+.boxes-header{
+    font-size: 3rem;
+    color:#635151;
+    margin-bottom: 30px;
+}
+
+.boxes-text{
+    font-size: 1.2rem;
+    line-height: 2;
+    color:#635151;
+    margin-bottom: 60px;
+}

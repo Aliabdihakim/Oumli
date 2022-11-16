@@ -8,7 +8,7 @@ const Cart = ({cartData, addToCart, updateCart ,removeItem}) => {
   console.log(cartData.line_items);
   console.log(cartData);
 
-  if(!cartData.line_items){
+  if(!cartData.line_items){ 
     console.log("hej")
   } else{
     const cartItems = (cartData.line_items).map(item => {
@@ -25,7 +25,8 @@ const Cart = ({cartData, addToCart, updateCart ,removeItem}) => {
     })
 
     return (
-      <>
+    <>
+      <div>
         <div className='cart-div'>
           <div className='cart-cartitems-div'>
             {cartItems}
@@ -33,18 +34,21 @@ const Cart = ({cartData, addToCart, updateCart ,removeItem}) => {
 
           <div className='cart-cartinfo-div'>
             <h3>Varukorg totalt</h3>
+            <br />
+            <h4>Frakt: Fri frakt</h4>
             <h4 style={{display:"flex", justifyContent:"space-between"}}>Delsumma: 
-              <span>{cartData.subtotal.raw}</span>
+              <span>{cartData.subtotal.raw}kr</span>
             </h4>
             <h4 style={{display:"flex", justifyContent:"space-between"}}>Summa: 
-              <span>{cartData.subtotal.raw}</span>
+              <span>{cartData.subtotal.raw}kr</span>
             </h4>
             <Link to='/kassa'>
-              <button>Fortsätt till kassan</button>
+              <button className='cart-cartinfo-button'>Fortsätt till kassan</button>
             </Link>
           </div>
         </div>
-      </>
+      </div>
+    </>
     )
     
   }

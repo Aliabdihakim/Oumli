@@ -1,0 +1,10 @@
+.payment-button{
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #B48261;
+    width: 70%;
+    font-family: 'Alata', sans-serif;
+    color: white;
+    margin: 5px;
+}

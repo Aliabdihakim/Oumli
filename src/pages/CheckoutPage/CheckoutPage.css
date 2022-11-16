@@ -1,0 +1,19 @@
+.checkout-div{
+    padding-bottom: 200px;
+}
+
+.checkout-paper{
+    margin: 30px 200px;
+    padding: 50px 50px 100px 50px;
+}
+
+@media (max-width: 1000px) {
+    .checkout-div{
+        padding-bottom: 200px;
+    }
+    
+    .checkout-paper{
+        margin: 30px 20px;
+        padding: 0
+    }
+  }
