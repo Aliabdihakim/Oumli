@@ -10,6 +10,7 @@ import CheckoutPage from './pages/CheckoutPage/CheckoutPage'
 import Boxes from './pages/Boxes/Boxes'
 import Giftcard from './pages/Giftcard/Giftcard'
 import About from './pages/About/About'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -97,6 +98,7 @@ function App() {
                 <Route path="/presentkort" element={<Giftcard />}/>
                 <Route path="/omoss" element={<About />}/>
           </Routes>
+          <Footer />
       </div>
     )
   } else {

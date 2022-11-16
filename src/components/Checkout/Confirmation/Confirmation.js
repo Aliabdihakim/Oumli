@@ -9,7 +9,7 @@ const Confirmation = () => {
             <p className='boxes-text'>
               Du kommer inom kort få ett mejl med din beställning och din beställning levereras den kommande lördagen.
               
-              Har du frågor eller funderingar kan du ringa oss på 0704501308
+              Har du frågor eller funderingar kan du ringa oss på +46739327484
             </p>
         </div>
     </div>

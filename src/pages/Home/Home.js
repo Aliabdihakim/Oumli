@@ -71,7 +71,7 @@ function Home({products}) {
       <section className='home-section5'>
         <div className='section5-div'>
           <h1 className='section5-header'>Kom igång</h1>
-          <button className='section5-button'>Beställ nu</button>
+          <button className='section5-button'><Link style={{textDecoration:"none", color:"white"}} to="/matlador">Beställ nu</Link></button>
         </div>
       </section>
     </>

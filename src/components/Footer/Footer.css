@@ -1,0 +1,40 @@
+.footer-div{
+    background-color: #635151;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    color: white;
+    padding: 100px 100px 20px 100px;
+}
+
+.footer-second-div{
+    display: flex;
+    flex-direction: column;   
+}
+
+.footer-dot{
+    color: transparent;
+}
+
+@media (max-width: 1000px) {
+    .footer-div{
+        background-color: #635151;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        color: white;
+        padding: 100px 100px 20px 100px;
+    }
+    
+    .footer-second-div{
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    .footer-dot{
+        color: transparent;
+    }
+    
+    .testar-fot{
+        background-color: #635151;  
+    }
+    
+  }

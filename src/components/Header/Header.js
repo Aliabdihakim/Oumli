@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaAlignJustify } from "react-icons/fa";
 import { Badge } from '@mui/material';
 import "./Header.css"
 
@@ -17,7 +17,19 @@ function Header({totalItems}) {
                 <NavLink className='header-logo' to="/">Oumli</NavLink>
             </li>
         </ul>
+
         <ul className='header-all-links '>
+            <li >
+                <NavLink className='menu-link' to="/matlador" style={navItems}>Matlådor</NavLink>
+            </li>
+            <li>
+                <NavLink className='menu-link' to="/presentkort" style={navItems}>Presentkort</NavLink>
+            </li>
+            <li>
+                <NavLink className='menu-link' to="/omoss" style={navItems}>Om oss</NavLink>
+            </li>
+        </ul>
+        <ul className='header-all-links-mobile'>
             <li >
                 <NavLink className='menu-link' to="/matlador" style={navItems}>Matlådor</NavLink>
             </li>
@@ -40,6 +52,9 @@ function Header({totalItems}) {
                 </div>
             </li>
         </ul>
+        <div>
+       
+        </div>
     </header>
   )
 }
